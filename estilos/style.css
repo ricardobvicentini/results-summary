@@ -50,6 +50,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: inline-block;
+}
+
 /* Main */
 
 /* Top Half */
@@ -57,7 +61,7 @@ a {
 section {
     height: 100vh;
     display: grid;
-    grid-template-rows: 45vh 55vh;
+    grid-template-rows: 45vh 50vh;
     justify-items: center;
 }
 
@@ -76,7 +80,7 @@ section {
 }
 
 .container-one__num {
-    background-image: linear-gradient(to bottom, var(--dark-grey), var(--blue), var(--bg-light-blue2));
+    background-image: linear-gradient(to bottom, var(--blue), var(--bg-light-blue2));
     padding: 2rem 3.5rem;
     border-radius: 50%;
     display: flex;
@@ -118,7 +122,7 @@ section {
 
 .container-two {
     width: 100%;
-    padding: 2rem 2.5rem 0;
+    padding: 0 2.5rem;
     display: flex;
     flex-direction: column;
 }
@@ -126,6 +130,7 @@ section {
 .container-two .title-three {
     color: var(--dark-grey);
     font-size: 1.8rem;
+    padding-block: 1.1rem 0;
 }
 
 .container-two__wrapper {
@@ -137,10 +142,13 @@ section {
 }
 
 .container-two__wrapper__react,
-.container-two__wrapper__mem,.container-two__wrapper__verb, .container-two__wrapper__vis {
+.container-two__wrapper__mem,
+.container-two__wrapper__verb, 
+.container-two__wrapper__vis {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 1rem;
     padding: 1.2rem;
     font-size: 1.5rem;
@@ -150,6 +158,11 @@ section {
 
 .container-two__wrapper__react {
     background-color: hsla(0, 100%, 67%, 0.096);
+}
+
+.wrapper__text {
+    display: flex;
+    gap: 1rem;
 }
 
 .react__text {
@@ -200,7 +213,13 @@ section {
 }
 
 .attribution {
+    height: 5vh;
     padding-block: .8rem;
     text-align: center;
+}
+
+.attribution > * {
     color: var(--dark-grey);
 }
+
+
