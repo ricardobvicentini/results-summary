@@ -59,7 +59,7 @@ img {
 /* Top Half */
 
 section {
-    height: 100vh;
+    height: calc(100vh - 5vh);
     display: grid;
     grid-template-rows: 45vh 50vh;
     justify-items: center;
@@ -220,6 +220,44 @@ section {
 
 .attribution > * {
     color: var(--dark-grey);
+    height: 5vh;
 }
 
+.attribution a:hover {
+    color: var(--blue);
+    text-decoration: underline;
+}
 
+@media (width >= 1280px) {
+
+    body {
+        border: 1px solid red;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section {
+        border: 1px solid red;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr;
+        height: 50vh;
+        width: 55vw;
+        border-radius: 30px;
+        box-shadow: 5px 5px 30px 8px rgba(0, 0, 0, 0.199);
+    }
+
+    .container-one {
+        border-radius: 30px;
+    }
+
+    .container-two {
+        border: 1px solid red;
+        padding: 3rem;
+        border-radius: 0 30px 30px 0;
+    }
+
+}
