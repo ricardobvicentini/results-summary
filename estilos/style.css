@@ -124,7 +124,6 @@ section {
 /* Bottom Half */
 
 .container-two {
-    border: 1px solid red;
     width: 100%;
     padding-inline: 2.5rem;
     display: flex;
@@ -140,7 +139,6 @@ section {
 }
 
 .container-two__wrapper {
-    border: 1px solid red;
     height: 90%;
     display: flex;
     flex-direction: column;
